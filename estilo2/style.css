@@ -1,0 +1,65 @@
+ @charset "UTF-8";
+
+ 
+ /* Variaveís -------------------------------------------------------*/
+
+ :root {
+    /*fontes*/
+    --fonte-titulo: 'titulo' , sans-serif;
+    --fonte-texto: "Shantell Sans", cursive;
+
+    /*cores*/
+    --cor-1:#C31B1B;
+    
+}
+
+/* Global -------------------------------------------------------*/
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+/* FONTES -------------------------------------------------------*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap'); 
+
+    @font-face {
+    font-family: 'titulo';
+    src: url('../fontes/Potato_sans-Black.otf') format('opentype');
+}
+
+/* Cabeçalho -------------------------------------------------------*/
+
+header  {
+    color: white;
+    background-color: var(--cor-1);
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--fonte-titulo);
+    font-variant: small-caps;
+    font-size: 5em;
+    margin-bottom: 0px;
+    padding-top: 50px;
+}
+
+header > p {
+    font-family: var(--fonte-texto) ;
+    padding-bottom: 50px;
+}
+
+/* Conteúdo Principal -------------------------------------------------------*/
+
+main h1 {
+    font-family: var(--fonte-titulo);
+    background-color: #C31B1B;
+    color: white;
+    writing-mode: vertical-rl;
+    margin-top: 350px;
+    padding: 8px;
+    font-size: 3em;
+}
