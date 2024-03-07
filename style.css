@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+/* FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap'); 
+
+@font-face {
+    font-family: 'titulo';
+    src: url('./fontes/Potato_sans-Black.otf') format('opentype');
+}
+
+/* VARIAVEIS ------------------------------------------*/ 
+
+    :root {
+        /* Fonte */ 
+        --fonte-titulo: 'titulo' , sans-serif;
+        --fonte-texto: "Shantell Sans", cursive;
+
+        /* Cores */
+        --cor-0: #006300; 
+    }
+
+/* GLOBAL ------------------------------------------*/
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+/* GERAL ------------------------------------------*/
+
+
+
+/* CABEÇALHO ------------------------------------------ */ 
+
+    header {
+        background-color:var(--cor-0);
+        color: white;
+        text-align: center;
+    }
+
+    header h1 {
+        font-family: var(--fonte-titulo);
+        font-size: 4.5em;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    header p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+        padding-bottom: 50px;
+        font-family: var(--fonte-texto);
+    }
+
+    header a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    header a:hover {
+        text-decoration: underline;
+    }
+
+    /* CONTEUDO PRINCIPAL ------------------------------------------ */
+
+    main {
+        font-family: var(--fonte-texto);
+        font-size: 2em;
+        color: white;
+    }
+
+    main img {
+        height: 50vh;
+        min-width: 300px;
+        max-width: 2560px;
+        width: 100%;
+        opacity: 0;
+    }
+
+
+    main #morango {
+        background-image: url('imagens/Morangos-1.jpg');
+        background-repeat: no-repeat;
+        margin: 20px;
+        box-shadow: inset 6px 6px  12px black;
+        background-size: cover;
+        height: 50vh;
+        background-attachment: fixed;
+    }
+
+    main #uva {
+        background-image: url('imagens/uva.jpg');
+        margin: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        background-attachment: fixed;
+        background-position: right center;
+        box-shadow: inset 6px 6px 12px black;
+    }
+
+    main #maça {
+        background-image: url('imagens/maça.jpg');
+        margin: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        background-attachment: fixed;
+        background-position: center center;
+        box-shadow: inset 6px 6px 12px black;
+    }
+
+    main #laranja {
+        background-image: url('imagens/laranja.jpg');
+        margin: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        background-attachment: fixed;
+        box-shadow: inset 6px 6px 12px black;
+        background-size: top center;
+    }
+
+    main #pitaya {
+        background-image: url('imagens/1_pitaya_capa.jpg');
+        margin: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        background-attachment: fixed;
+        box-shadow: inset 6px 6px 12px black;
+        
+    }
+
+
+    /* RODAPÉ ------------------------------------------ */
+
+    footer {
+        background-color: var(--cor-0);
+        color: white;
+        font-family: var(--fonte-texto);
+        text-align: center;
+        padding: 7px;
+
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
